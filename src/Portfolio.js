@@ -9,12 +9,16 @@ class Portfolio extends Component {
   }
 
   toggle() {
+    // ============== chatgpt =============
     // this.setState((prevState) => ({ read: !prevState.read }));
-    if (this.state.read === true) {
-      this.setState({ read: false });
-    } else {
-      this.setState({ read: true });
-    }
+    // 1 methode=================
+    // if (this.state.read) {
+    //   this.setState({ read: false });
+    // } else {
+    //   this.setState({ read: true });
+    // }
+    // 2 methode=================
+    this.setState({ read: !this.state.read });
   }
 
   render() {
@@ -24,7 +28,7 @@ class Portfolio extends Component {
         <img style={style} src={img} alt="" />
         <h2>omar el bzizi</h2>
         <p>je m'appelle omar el bzizi j'ai 22 ans </p>
-        {this.state.read === true ? (
+        {this.state.read ? (
           <div>
             <p>j'aime jouer au football</p>
             <p>j'adore les maths</p>
