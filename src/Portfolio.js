@@ -1,0 +1,16 @@
+import React, { Component } from "react";
+import img from "./assets/WhatsApp Image 2023-10-13 at 00.35.04.jpeg";
+class Portfolio extends Component {
+  render() {
+    const style={ width:"200px" , height:"200px"}
+    return (
+      <div>
+        <img style={style} src={img} alt="" />
+        <h2>omar el bzizi</h2>
+        <p>je m'appelle omar el bzizi j'ai 22 ans </p>
+      </div>
+    );
+  }
+}
+
+export default Portfolio;
