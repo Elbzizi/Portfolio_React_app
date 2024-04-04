@@ -9,7 +9,12 @@ class Portfolio extends Component {
   }
 
   toggle() {
-    this.setState((prevState) => ({ read: !prevState.read }));
+    // this.setState((prevState) => ({ read: !prevState.read }));
+    if (this.state.read === true) {
+      this.setState({ read: false });
+    } else {
+      this.setState({ read: true });
+    }
   }
 
   render() {
