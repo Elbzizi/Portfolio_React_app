@@ -1,7 +1,10 @@
 import React from "react";
+import Portfolio from "./Portfolio";
 
 const App = () => {
-  return <div>omar el bzizi</div>;
+  return  <div>
+    <Portfolio />
+  </div>;
 };
 
 export default App;
