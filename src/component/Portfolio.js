@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import img from "./assets/WhatsApp Image 2023-10-13 at 00.35.04.jpeg";
+import img from "../assets/WhatsApp Image 2023-10-13 at 00.35.04.jpeg";
 
 class Portfolio extends Component {
   constructor() {
@@ -31,7 +31,7 @@ class Portfolio extends Component {
         {this.state.read ? (
           <div>
             <p>j'aime jouer au football</p>
-            <p>j'adore les maths</p>
+            <p>j'adore le MAS</p>
             <button onClick={this.toggle}>Hide</button>
           </div>
         ) : (
