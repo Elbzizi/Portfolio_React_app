@@ -14,7 +14,7 @@
 .card {
   text-align: center;
   width: 100;
-  box-shadow: 2px 2px 0px 2px rgb(20, 20, 20);
+  box-shadow: 2px 2px 0px 2px rgb(241, 237, 237);
 }
 .card h3 {
   color: grey;
@@ -35,4 +35,7 @@
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-around;
+}
+.card h3{
+text-align: center;
 }
