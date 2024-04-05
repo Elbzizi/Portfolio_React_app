@@ -2,10 +2,37 @@
   list-style: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.row{
+.content {
+  margin: 0px 90px;
+}
+.row {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-around;
-  margin: 0px 90px;
+}
+
+.card {
+  text-align: center;
+  width: 100;
+  box-shadow: 2px 2px 0px 2px rgb(20, 20, 20);
+}
+.card h3 {
+  color: grey;
+  font-size: 20;
+}
+.card button {
+  width: 100%;
+  background-color: rgb(4, 136, 92);
+  color: white;
+  padding: 5px;
+  font-size: 15;  
+}
+.card img{
+  width: 300px;
+  height: 300px;
+}
+.cours{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
 }
