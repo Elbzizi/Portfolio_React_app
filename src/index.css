@@ -1,0 +1,11 @@
+* {
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  margin: 0px 90px;
+}
