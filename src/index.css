@@ -25,17 +25,21 @@
   background-color: rgb(4, 136, 92);
   color: white;
   padding: 5px;
-  font-size: 15;  
+  font-size: 15;
+  transition: 0.3s;
 }
-.card img{
+.card button:hover {
+  opacity: 0.5;
+}
+.card img {
   width: 300px;
   height: 300px;
 }
-.cours{
+.cours {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-around;
 }
-.card h3{
-text-align: center;
+.card h3 {
+  text-align: center;
 }
