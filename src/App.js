@@ -6,7 +6,7 @@ import Cours from "./component/Cours";
 import SocilasProfiles from "./component/SocilasProfiles";
 const App = () => {
   return (
-    <div className="content">
+    <div className="container">
       <div className="row">
         <Portfolio />
         <Qualification />
