@@ -1,12 +1,18 @@
 import React from "react";
-import image from "../assets/WhatsApp Image 2023-10-13 at 00.35.04.jpeg";
 const Card = (props) => {
+  const { title, description, image, link } = props.cours;
   return (
     <div className="card">
-      <img src={props.cours.image} alt="" />
-      <h3>{props.cours.title}</h3>
-      <p>{props.cours.description}</p>
-      <button>cours</button>
+      <img src={image} alt="" />
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <button
+        onClick={() => {
+          window.location.href = link;
+        }}
+      >
+        cours
+      </button>
     </div>
   );
 };
