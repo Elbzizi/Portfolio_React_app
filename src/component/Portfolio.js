@@ -32,10 +32,10 @@ class Portfolio extends Component {
           <div>
             <p>j'aime jouer au football</p>
             <p>j'adore le MAS</p>
-            <button onClick={this.toggle}>Hide</button>
+            <button className="btn btn-outline-danger" onClick={this.toggle}>Hide</button>
           </div>
         ) : (
-          <button onClick={this.toggle}>Show More</button>
+          <button className="btn btn-outline-primary" onClick={this.toggle}>Show More</button>
         )}
       </div>
     );
