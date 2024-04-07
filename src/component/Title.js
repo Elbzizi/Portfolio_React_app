@@ -17,7 +17,7 @@ const Title = () => {
   }, [index]);
   return (
     <div className="text-center">
-      <h3>I am {title[index]}</h3>
+      <h3 className="title">I am {title[index]}</h3>
     </div>
   );
 };
