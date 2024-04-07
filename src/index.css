@@ -43,3 +43,12 @@
 .card h3 {
   text-align: center;
 }
+.social {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.social img{
+  width: 100px;
+  margin: 20px;
+}
