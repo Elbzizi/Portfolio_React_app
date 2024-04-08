@@ -67,6 +67,13 @@
     width: 60px;
   }
 }
-.title{
-  
+.fadeIn {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
 }
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+

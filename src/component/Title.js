@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const Title = () => {
   const [index, SetIndex] = useState(0);
+  const [tit, SetTit] = useState(false);
   const title = [
     "an engineer developer",
     "a fitness athlete",
@@ -10,14 +11,16 @@ const Title = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       SetIndex(index >= 2 ? 0 : index + 1);
-    }, 3000);
+      SetTit(!tit);
+    }, 2000);
     return () => {
+      SetTit(!tit);
       clearInterval(interval);
     };
-  }, [index]);
+  });
   return (
-    <div className="text-center">
-      <h3 className="title">I am {title[index]}</h3>
+    <div className="text-center ">
+      <h3 className={tit ? "fadeIn" : "fadeOut"}>I am {title[index]}</h3>
     </div>
   );
 };
