@@ -12,12 +12,19 @@ const Title = () => {
     const interval = setInterval(() => {
       SetIndex(index >= 2 ? 0 : index + 1);
       SetTit(!tit);
-    }, 2000);
+    }, 4000);
     return () => {
-      SetTit(!tit);
       clearInterval(interval);
     };
-  });
+  }, [index]);
+  useEffect(() => {
+    const opacity = setInterval(() => {
+      SetTit(!tit);
+    }, 1000);
+    return () => {
+      clearInterval(opacity);
+    };
+  }, [tit]);
   return (
     <div className="text-center ">
       <h3 className={tit ? "fadeIn" : "fadeOut"}>I am {title[index]}</h3>

@@ -6,8 +6,8 @@ const SocilasProfiles = () => {
     <div>
       <h1 style={{ textAlign: "center" }}>My social Profile </h1>
       <div className="social">
-        {SOCIAL.map((item) => {
-          return <Social socila={item} />;
+        {SOCIAL.map((item,index) => {
+          return <Social socila={item} key={index} />;
         })}
       </div>
     </div>
