@@ -6,8 +6,8 @@ const Cours = () => {
     <div>
       <h1 style={{ textAlign: "center" }}>Mes Cours</h1>
       <div className="cours">
-        {COURSES.map((item) => {
-          return <Card cours={item} />;
+        {COURSES.map((item,index) => {
+          return <Card cours={item}  key={index}/>;
         })}
       </div>
     </div>
