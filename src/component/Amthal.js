@@ -1,22 +1,25 @@
 import React, { useEffect, useState } from "react";
 
 const Amthal = () => {
-  const [amthal, SetAmthal] = useState([]);
-  const [One, SetOne] = useState([]);
+  const [amthal, setAmthal] = useState([]);
+  const [one, setOne] = useState({});
+
   useEffect(() => {
     fetch("http://localhost:3005/amthal/One")
       .then((res) => res.json())
-      .then((json) => SetOne(json));
+      .then((json) => setOne(json));
   }, []);
-  Tin(){
+
+  const tin = () => {
     fetch("http://localhost:3005/amthal/Dix")
-    .then((res) => res.json())
-    .then((json) => SetOne(json));
-  }
+      .then((res) => res.json())
+      .then((json) => setOne(json));
+  };
+
   return (
     <div className="amthal">
       <h1>مثال اليوم</h1>
-      <p>{One.title}</p>
+      <p>{one.title}</p>
       {/* <ul>
         {amthal.map((item, index) => {
           return <li key={index}>{item.title}</li>;
