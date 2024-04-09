@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 const Amthal = () => {
-  const [amthal, SetAmthal] = useState([]);
+  const [amthal, SetAmthal] = useState();
   useEffect(() => {
-    fetch("http://localhost:3005/amthal/Dix")
+    fetch("http://localhost:3005/amthal/One")
       .then((res) => res.json())
       .then((json) => SetAmthal(json));
   }, []);
