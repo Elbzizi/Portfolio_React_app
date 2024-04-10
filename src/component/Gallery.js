@@ -5,7 +5,7 @@ const Gallery = () => {
   return (
     <div className="container">
       {IMAGES.map((item) => {
-        return <Image src={item.image} desc={item.description} />;
+        return <Image key={item.id} src={item.image} desc={item.description} />;
       })}
     </div>
   );
