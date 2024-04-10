@@ -10,6 +10,9 @@ const Header = () => {
         <h3 className="m-1 ">
           <Link to="/Amthal">Amthal</Link>
         </h3>
+        <h3 className="m-1 ">
+          <Link to="/Gallery">Gallery</Link>
+        </h3>
       </div>
     </div>
   );
