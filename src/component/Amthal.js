@@ -13,18 +13,23 @@ const Amthal = () => {
   const tin = () => {
     fetch("http://localhost:3005/amthal/Dix")
       .then((res) => res.json())
-      .then((json) => setOne(json));
+      .then((json) => setAmthal(json));
   };
 
   return (
     <div className="amthal">
       <h1>مثال اليوم</h1>
       <p>{one.title}</p>
-      {/* <ul>
-        {amthal.map((item, index) => {
-          return <li key={index}>{item.title}</li>;
-        })}
-      </ul> */}
+      <button onClick={tin} className="btn btn-outline-info">
+        plus du Amthal
+      </button>
+      <ul>
+        {amthal.length > 0
+          ? amthal.map((item, index) => {
+              return <li key={index}>{item.title}</li>;
+            })
+          : ""}
+      </ul>
     </div>
   );
 };
