@@ -5,15 +5,19 @@ const Gallery = () => {
   return (
     <div className="container">
       {IMAGES.map((item) => {
-        return (
-          <div className="gallery">
-            <h4>{item.title}</h4>
-            <img src={item.image} alt="" />
-            <p>{item.description}</p>
-          </div>
-          // <ImageShadow src={item.image}/>
-        );
+        return <Image src={item.image} desc={item.description} />;
       })}
+    </div>
+  );
+};
+
+const Image = ({ src, desc }) => {
+  return (
+    <div className="gallery">
+      <a href={src} target="_blank" rel="noreferrer">
+        <ImageShadow src={src} />
+      </a>
+      <p>{desc}</p>
     </div>
   );
 };
