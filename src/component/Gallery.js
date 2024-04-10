@@ -1,11 +1,19 @@
 import React from "react";
-
-const Gallery = (props) => {
+import IMAGES from "../data/Images";
+import ImageShadow from "react-image-shadow";
+const Gallery = () => {
   return (
-    <div className="gallery">
-      <h4>{props.gallery.title}</h4>
-      <img src={props.gallery.img} alt="" />
-      <p> {props.gallery.img}</p>
+    <div className="container">
+      {IMAGES.map((item) => {
+        return (
+          <div className="gallery">
+            <h4>{item.title}</h4>
+            <img src={item.image} alt="" />
+            <p>{item.description}</p>
+          </div>
+          // <ImageShadow src={item.image}/>
+        );
+      })}
     </div>
   );
 };
