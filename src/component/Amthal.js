@@ -20,8 +20,9 @@ const Amthal = () => {
     <div className="amthal">
       <h1>مثال اليوم</h1>
       <p>{one.title}</p>
+      <h3>هل تريد المزيد من الأمتال </h3>
       <button onClick={tin} className="btn btn-outline-info">
-        plus du Amthal
+        plus
       </button>
       <ul>
         {amthal.length > 0
